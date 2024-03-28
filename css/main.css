@@ -1,0 +1,15 @@
+/* basic */
+
+body {
+    margin: 0;
+}
+
+section {
+    padding: 2rem;
+}
+
+/* index */
+
+.welcome {
+    background-color: rgb(229, 223, 235);
+}
