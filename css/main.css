@@ -2,14 +2,51 @@
 
 body {
     margin: 0;
+    background-color: rgb(255, 255, 255);
 }
 
 section {
     padding: 2rem;
 }
 
+/* header */
+
+
+
 /* index */
 
 .welcome {
-    background-color: rgb(229, 223, 235);
+    background-color: rgb(230, 224, 234);
 }
+
+div {
+    background-color: rgb(255, 255, 255);
+}
+
+/* slick */
+
+.slick-slide {
+	transform: scale(0.8);
+	transition: all 0.4s ease-in-out;
+	padding: 40px 0;
+}
+
+
+.slick-slide img {
+	max-width: 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.slick-center {
+	transform: scale(1.1);
+}
+
+.slick-prev:before {
+    color: rgb(115, 82, 145) !important;
+    background-color: #ffffff;
+  
+  }
+  .slick-next:before {
+    color: rgb(107, 85, 130) !important;
+    background-color: #ffffff;
+  }
