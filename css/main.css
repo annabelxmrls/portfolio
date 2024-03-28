@@ -1,5 +1,7 @@
 /* basic */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yeseva+One&display=swap');
+
 body {
     margin: 0;
     background-color: rgb(255, 255, 255);
@@ -9,29 +11,83 @@ section {
     padding: 2rem;
 }
 
+h2 {
+    font-family: Yeseva One;
+    font-size: 26px;
+    text-align: center;
+}
+
+p {
+    font-family: Roboto;
+}
+
 /* header */
 
 header {
     padding: 2rem;
-}
-
-.header-nav {
-    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-li {
+    font-family: Roboto;
+    font-size: 16px;
     display: inline;
-    justify-content: space-around;
+    padding-left: 1rem;
+}
+
+.header-li a {
+    text-decoration: none;
+}
+
+.header-ul {
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav, h1 {
+    text-align: center;
+}
+
+h1 {
+    font-family: Yeseva One;
+    font-size: 40px;
+    color: rgb(54, 54, 54);
+}
+
+.header-li:not(:last-child) {
+    border-right: 1px solid rgba(54, 54, 54, 0.5); 
+    padding-right: 1rem; 
+}
+
+.active {
+    font-weight: 500;
+    color: rgb(106, 48, 160);
+}
+
+.inactive {
+    color: rgb(97, 68, 125);
+}
+
+.inactive:hover {
+    color: rgb(197, 134, 255);
 }
 
 /* index */
 
-.welcome {
-    background-color: rgb(230, 224, 234);
+.memoji {
+    margin: 1.5rem;
+    max-width: 28vw;
 }
 
-div {
-    background-color: rgb(255, 255, 255);
+.welcome {
+    background-color: rgba(114, 100, 176, 0.199);
+    //box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* slick */
@@ -61,3 +117,10 @@ div {
     color: rgb(107, 85, 130) !important;
     background-color: #ffffff;
   }
+
+/* footer */
+
+footer {
+    background-color: rgb(90, 60, 118);
+    padding: 2rem;
+}
