@@ -11,7 +11,18 @@ section {
 
 /* header */
 
+header {
+    padding: 2rem;
+}
 
+.header-nav {
+    text-align: center;
+}
+
+.header-li {
+    display: inline;
+    justify-content: space-around;
+}
 
 /* index */
 
