@@ -143,6 +143,23 @@ figcaption a:hover {
     color: rgb(197, 134, 255);
 }
 
+/* projects */
+
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+}
+
 /* footer */
 
 footer {
@@ -166,7 +183,15 @@ footer {
     color: rgb(189, 104, 231);
 }
 
-h3 {
+h4 {
     color: #ffffff;
     font-family: Roboto;
+}
+
+@media screen and (min-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
 }
