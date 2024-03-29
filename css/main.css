@@ -92,6 +92,11 @@ h1 {
 
 /* slick */
 
+.slider {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
 .slick-slide {
 	transform: scale(0.8);
 	transition: all 0.4s ease-in-out;
@@ -102,6 +107,8 @@ h1 {
 .slick-slide img {
 	max-width: 100%;
 	transition: all 0.4s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
 }
 
 .slick-center {
@@ -113,10 +120,27 @@ h1 {
     background-color: #ffffff;
   
   }
-  .slick-next:before {
+
+.slick-next:before {
     color: rgb(107, 85, 130) !important;
     background-color: #ffffff;
   }
+
+figcaption {
+    text-align: center;
+    padding-top: 0.25rem;
+}
+
+figcaption a {
+    color: rgb(97, 68, 125);
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+figcaption a:hover {
+    color: rgb(197, 134, 255);
+}
 
 /* footer */
 
