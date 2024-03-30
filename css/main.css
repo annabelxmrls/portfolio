@@ -73,11 +73,6 @@ header {
     display: block;
 }
 
-.dropdown-menu a:hover {
-    font-weight: 500;
-    color: rgb(197, 134, 255);
-}
-
 h1 {
     text-align: center;
     font-family: Yeseva One;
@@ -90,16 +85,17 @@ h1 {
     padding-right: 1rem; 
 }
 
-.active {
+.active, .on {
     font-weight: 500;
     color: rgb(106, 48, 160);
 }
 
-.inactive {
+.inactive, .off {
     color: rgb(97, 68, 125);
 }
 
-.inactive:hover {
+.inactive:hover, .off:hover {
+    font-weight: 500;
     color: rgb(197, 134, 255);
 }
 
