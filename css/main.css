@@ -7,22 +7,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-section {
-    padding: 2rem;
-}
-
-h2 {
-    font-family: Yeseva One;
-    font-size: 26px;
-    text-align: center;
-    color: rgba(87, 76, 134, 1);
-}
-
-p {
-    font-family: Roboto;
-    color: rgb(26, 25, 25);
-}
-
 /* header */
 
 header {
@@ -62,7 +46,6 @@ header {
 
 .dropdown-menu a {
     text-decoration: none;
-    color: rgb(97, 68, 125);
     display: block;
 }
 
@@ -86,10 +69,11 @@ h1 {
     padding-right: 1rem; 
 }
 
-.active, .on {
-    font-weight: 500;
-    color: rgb(106, 48, 160);
+.active, .on  {
+    font-weight: 600;
+    color: rgb(127, 42, 207);
 }
+
 
 .inactive, .off {
     color: rgb(97, 68, 125);
@@ -108,11 +92,27 @@ h1 {
 }
 
 .welcome {
-    background-color: rgba(114, 100, 176, 0.199);
+    background-color: rgba(170, 134, 229, 0.15);
 }
 
 .flex {
     display: flex;
+}
+
+section {
+    padding: 2rem;
+}
+
+h2 {
+    font-family: Yeseva One;
+    font-size: 28px;
+    text-align: center;
+    color: rgb(76, 64, 138);
+}
+
+p {
+    font-family: Roboto;
+    color: rgb(26, 25, 25);
 }
 
 /* slick */
@@ -129,11 +129,18 @@ h1 {
 }
 
 
-.slick-slide img {
+.slick-slide .img1 {
 	max-width: 100%;
 	transition: all 0.4s ease-in-out;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
+}
+
+.slick-slide .img2 {
+    max-width: 100%;
+	transition: all 0.4s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 
 .slick-center {
@@ -141,29 +148,29 @@ h1 {
 }
 
 .slick-prev:before {
-    color: rgb(149, 107, 195) !important;
+    color: rgb(76, 64, 138) !important;
     background-color: #ffffff;
   
   }
 
 .slick-next:before {
-    color: rgb(149, 107, 195) !important;
+    color: rgb(76, 64, 138) !important;
     background-color: #ffffff;
   }
 
-figcaption {
-    text-align: center;
+.title {
     padding-top: 0.25rem;
-}
-
-figcaption a {
     color: rgb(26, 25, 25);
     text-decoration: none;
     font-family: Roboto;
     font-size: 14px;
 }
 
-figcaption a:hover {
+.item {
+    text-align: center;
+}
+
+title:hover {
     color: rgb(197, 134, 255);
 }
 
@@ -189,18 +196,21 @@ figcaption a:hover {
 }
 
 .view-btn {
-    margin-left: 1rem;
-    margin-top: 2.5rem;
     height: 2.5rem;
     width: 6rem;
-    background-color: rgb(36, 153, 237);
+    background-color: rgb(141, 56, 220);
     border-radius: 3px;
     border: transparent;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.view-btn:hover {
-    background-color: rgb(28, 119, 184);
+.view-btn {
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+}
+
+.view-btn:hover, .visit-btn:hover {
+    background-color: rgb(104, 38, 165);
 }
 
 .view-btn a {
@@ -218,6 +228,7 @@ figcaption a:hover {
 
 h3 {
     font-family: Roboto;
+    color: rgb(26, 25, 25);
 }
 
 /* project details */
@@ -227,12 +238,57 @@ h3 {
     font-family: Yeseva One;
     text-align: center;
     color: rgb(66, 65, 73);
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .details h4 {
+    color: rgb(26, 25, 25);
     font-family: Roboto;
+    font-size: 18px;
+    margin-bottom: -0.3rem;
+    margin-top: 0rem;
 }
+
+.container {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 2rem;
+}
+
+.s2 {
+    margin-top: -1.5rem;
+    margin-bottom: -2.5rem;
+}
+
+.skills li {
+    font-family: Roboto;
+    margin-left: -1rem;
+}
+
+.functions {
+    font-family: Roboto;
+    margin-top: 0.5rem;
+    font-size: 18px;
+}
+
+.visit-btn {
+    font-family: Roboto;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-left: 18.75rem;
+    background-color: rgb(141, 56, 220);
+    border-radius: 3px;
+    border: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 
 /* contact */
 
@@ -263,9 +319,9 @@ textarea {
 input[type="submit"] {
     color: white;
     margin-top: 0.75rem;
-    padding: 0.5rem;
-    width: 65px;
-    background-color: rgb(36, 153, 237);
+    padding: 0.6rem;
+    width: 70px;
+    background-color: rgb(141, 56, 220);
     border-radius: 3px;
     border: transparent;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -274,7 +330,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: rgb(28, 119, 184);
+    background-color: rgb(104, 38, 165);
 }
 
 span {
@@ -284,7 +340,7 @@ span {
 /* footer */
 
 footer {
-    background-color: rgba(87, 76, 134, 1);
+    background-color: rgba(76, 64, 138);
     padding: 2rem;
 }
 
