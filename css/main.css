@@ -20,6 +20,7 @@ h2 {
 
 p {
     font-family: Roboto;
+    color: rgb(26, 25, 25);
 }
 
 /* header */
@@ -156,7 +157,7 @@ figcaption {
 }
 
 figcaption a {
-    color: rgb(97, 68, 125);
+    color: rgb(26, 25, 25);
     text-decoration: none;
     font-family: Roboto;
     font-size: 14px;
