@@ -159,7 +159,6 @@ p {
   }
 
 .title {
-    padding-top: 0.25rem;
     color: rgb(26, 25, 25);
     text-decoration: none;
     font-family: Roboto;
@@ -170,7 +169,7 @@ p {
     text-align: center;
 }
 
-title:hover {
+.title:hover {
     color: rgb(197, 134, 255);
 }
 
@@ -196,17 +195,20 @@ title:hover {
 }
 
 .view-btn {
-    height: 2.5rem;
-    width: 6rem;
+    font-family: Roboto;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-top: 2rem;
+    max-height: 2rem;
+    padding-left: 0.75rem;
+    padding-top: 0.8rem;
+    padding-right: 0.75rem;
     background-color: rgb(141, 56, 220);
     border-radius: 3px;
     border: transparent;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.view-btn {
     margin-left: 1rem;
-    margin-top: 2.5rem;
 }
 
 .view-btn:hover, .visit-btn:hover {
@@ -219,7 +221,7 @@ title:hover {
 }
 
 .card p {
-    width: 300px;
+    width: 270px;
 } 
 
 .card .flex {
@@ -268,8 +270,6 @@ h3 {
 }
 
 .functions {
-    font-family: Roboto;
-    margin-top: 0.5rem;
     font-size: 18px;
 }
 
@@ -278,11 +278,7 @@ h3 {
     font-size: 14px;
     color: white;
     text-decoration: none;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    margin-left: 18.75rem;
+    padding: 0.7rem;
     background-color: rgb(141, 56, 220);
     border-radius: 3px;
     border: transparent;
