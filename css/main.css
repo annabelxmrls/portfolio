@@ -87,8 +87,10 @@ h1 {
 /* index */
 
 .memoji {
-    margin: 1.5rem;
-    max-width: 28vw;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    max-width: 11rem;
+    max-height: 9rem;
 }
 
 .welcome {
@@ -202,7 +204,8 @@ p {
     margin-top: 2rem;
     max-height: 2rem;
     padding-left: 0.75rem;
-    padding-top: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     padding-right: 0.75rem;
     background-color: rgb(141, 56, 220);
     border-radius: 3px;
@@ -220,9 +223,6 @@ p {
     color: white;
 }
 
-.card p {
-    width: 270px;
-} 
 
 .card .flex {
     margin-top: -1.5rem;
@@ -256,12 +256,12 @@ h3 {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .s2 {
     margin-top: -1.5rem;
-    margin-bottom: -2.5rem;
+    margin-bottom: -5rem;
 }
 
 .skills li {
@@ -274,6 +274,7 @@ h3 {
 }
 
 .visit-btn {
+    float: right;
     font-family: Roboto;
     font-size: 14px;
     color: white;
@@ -289,12 +290,18 @@ h3 {
 /* contact */
 
 .form {
+    font-family: Roboto;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+}
+
+form {
     background-color: white;
     padding: 2rem;
     border-radius: 3px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    font-family: Roboto;
-    margin-bottom: 2.5rem;
 }
 
 label, input {
@@ -367,9 +374,89 @@ footer h4 {
 }
 
 @media screen and (min-width: 600px) {
+
+    .memoji {
+        max-width: 100%;
+        margin-left: 5rem;
+    }
+
+    .bio {
+        max-width: 50vw;
+    }
+
+    .flex {
+        justify-content: center;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .bio-container {
+        padding-bottom: 2rem;
+    }
+
+    .block {
+       margin: 0;
+    }
+    
+    form {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media screen and (min-width: 950px) {
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(calc(50% - 10px), 1fr)); /* Adjust as needed */
         gap: 20px;
-      }
+    }
+
+    .card img {
+        max-width: 20vw;
+        margin-right: 1rem;
+    }
+
+    .card {
+        display: flex;
+    }
+
+    .block {
+        display: inline-block;
+    }
+
+    .card {
+        margin-bottom: 0rem;
+        padding: 20px;
+    }
+
+    .view-btn {
+        padding-bottom: 0.75rem;
+        float: right;
+        margin: 0;
+    }
+
+    .container-flex {
+        display: flex;
+    }
+
+    .flex-div {
+        max-width: 60vw;
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+    .s2 {
+        margin-top: -4.5rem;
+    }
+
+    .visit-btn {
+        margin-top: -2rem;
+        float: right;
+    }
+
+    .skills-container {
+        margin-left: 3rem;
+    }
 }
