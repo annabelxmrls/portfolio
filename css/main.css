@@ -477,4 +477,8 @@ footer h4 {
     .skills-container {
         margin-left: 3rem;
     }
+
+    .block2 {
+        display: block;
+    }
 }
